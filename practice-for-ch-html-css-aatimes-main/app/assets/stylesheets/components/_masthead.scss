@@ -74,4 +74,24 @@
 		color: green;
 	}
 
+	.fas.fa-newspaper {
+    color: black;
+	}
+
+	.fas.fa-video{
+
+	}
+
+	.subheading ul {
+		display: flex;
+		
+	}
+	.subheading ul * {
+		font-size: 24px;
+	}
+
+}
+.subheading ul li:nth-child(2) p,
+.subheading ul li:nth-child(3) p {
+  text-decoration: underline;
 }

@@ -1,46 +1,69 @@
 @use '../variables' as *;
 
+
 .main-nav {
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  border-bottom: 1.5px solid;
+  border-color: rgb(193, 186, 186);
+  // background-color: aqua;
 }
 
-.left-nav > ul,
-.right-nav > ul {
-  
+.main-nav button {
+  border-radius: 0.4em;
 }
 
-.left-nav {
-
-  > ul {
-    > li {
-      
-    }
-  }
-
-  span {
-    
-  }
+.left-nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 250px;
+ 
 }
 
-.right-nav  {
-  > ul {
-    > li {
-      
-    }
-
-    > li:last-of-type {
-      
-    }
-  }
-  
-  i {
-    
-  }
+.right-nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 300px;
 }
 
-.left-nav > ul > li:hover,
-.right-nav > ul > li:last-of-type:hover {
-  
+.right-nav ul button {
+  font-weight: bolder;
+  background-color: rgb(121, 130, 250);
+  color: white;
+  border: none;
+  padding: 10px 10px; /* Adjust the padding values to add space around the text */
 }
 
-    
+
+.right-nav ul li:last-child button {
+  border: none;
+  color: black;
+  font-weight: bolder;
+  background-color: transparent;
+}
+
+#search-modal-btn {
+  border: none;
+  font-weight: bolder;
+  padding: 10px 10px;
+  background-color: transparent;
+}
+
+#sections-sidebar-btn {
+  border: none;
+  background-color: transparent;
+  font-weight: bolder;
+  padding: 10px 10px;
+}
+
+#sections-sidebar-btn:hover, .right-nav ul li:last-child button:hover, #search-modal-btn:hover {
+  background-color: rgb(220, 220, 220);
+}
+
+.right-nav ul button:hover {
+  background-color: rgb(54, 67, 255);
+}
